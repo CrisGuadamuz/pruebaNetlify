@@ -52,9 +52,10 @@ btn.addEventListener("click",e=>{
 })
 
 const filterPokemon = async(input) =>{
-    
-    if(input !== ""){
-        const API_URL = `https://pokeapi.co/api/v2/pokemon/${input}`
+
+   const inputLower = input.toLowerCase()
+    if(inputLower !== ""){
+        const API_URL = `https://pokeapi.co/api/v2/pokemon/${inputLower}`
         const res = await fetch(API_URL)
         const data = await res.json()
         pokemonDiv.innerHTML =""
@@ -68,5 +69,4 @@ const filterPokemon = async(input) =>{
     }
 
 }
-
 
