@@ -8,10 +8,6 @@ const btn = document.getElementById("btn")
 
 
 
-window.addEventListener("load",function(){
-
-    document.getElementById("loader").classList.toggle("false")
-})
 
 window.addEventListener("DOMContentLoaded",()=>{
     setFetch()
